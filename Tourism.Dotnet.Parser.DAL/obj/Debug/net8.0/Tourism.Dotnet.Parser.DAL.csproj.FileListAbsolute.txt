@@ -12,3 +12,4 @@
 /home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Parser.DAL/obj/Debug/net8.0/Tourism.Dotnet.Parser.DAL.pdb
 /home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Parser.DAL/obj/Debug/net8.0/Tourism.Dotnet.Parser.DAL.genruntimeconfig.cache
 /home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Parser.DAL/obj/Debug/net8.0/ref/Tourism.Dotnet.Parser.DAL.dll
+/home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Parser.DAL/obj/Debug/net8.0/Tourism.Dotnet.Parser.DAL.sourcelink.json

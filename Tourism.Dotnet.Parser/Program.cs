@@ -22,8 +22,6 @@ builder.Services.AddDal();
 var app = builder.Build();
 using var scope = app.Services.CreateScope();
 await using var dbContext = scope.ServiceProvider.GetRequiredService<ParserDbContext>();
-dbContext.Database.EnsureDeleted();
-dbContext.Database.EnsureCreated();
 
 app.UseSwagger();
 app.UseSwaggerUI();

@@ -5,9 +5,14 @@ using Tourism.Dotnet.Parser.DAL.Implementations;
 
 namespace Tourism.Dotnet.Parser.Services;
 
-public class PlacesService(IHttpClientFactory factory, Repository<Place> repository, ParserDbContext context)
+public class PlacesService(IHttpClientFactory factory, Repository<Place> repository,Repository<City> cityRepository, ParserDbContext context)
 {
-    public async Task<List<Place>> ParseAndAddPlaces(string city, int page, CancellationToken cancellationToken = default){
+    CityService _cityService = new (cityRepository,repository,context);
+    public async Task<List<Place>> ParseAndAddPlaces(string city, int page, CancellationToken cancellationToken = default)
+    {
+        City? currentCity = await context.Cities.Where(x => x.Title == city).FirstOrDefaultAsync();
+        if (currentCity == null)
+            return new List<Place>();
         GisParser parser = new GisParser(factory);
         List<Place> places = await parser.ConvertToPlaces(await parser.FetchPlaces(city, page, cancellationToken), cancellationToken);
         foreach (var place in places)
@@ -25,14 +30,20 @@ public class PlacesService(IHttpClientFactory factory, Repository<Place> reposit
                 await context.SaveChangesAsync();
                 place.ScheduleId = place.Schedule.Id;
             }
-
+            
             await context.Places.AddAsync(place);
             await context.SaveChangesAsync();
 
         }
+        List<int> placesIds = places.Select(x => x.Id).ToList();
+        await _cityService.UpdateAsync(currentCity.Id,city, placesIds);
         return places;
     }
 
+    public async Task<Place?> GetByNameAsync(string name, CancellationToken cancellationToken = default)
+    {
+        return await context.Places.Where(x=>x.Name==name).FirstOrDefaultAsync();
+    }
     public async Task AddPlaces(Place place, CancellationToken cancellationToken = default)
     {
         await repository.CreateAsync(place, cancellationToken);

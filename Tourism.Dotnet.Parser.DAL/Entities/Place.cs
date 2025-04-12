@@ -8,6 +8,7 @@ public class Place
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id { get; set; }
     public string? FullName { get; set; } = string.Empty;
+    public string? ImageUrl { get; set; } = string.Empty;
     public string? Name { get; set; } = string.Empty;
     public string? Address { get; set; } = string.Empty;
     public string? Rating { get; set; } = string.Empty;

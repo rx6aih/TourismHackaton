@@ -48,3 +48,4 @@
 /home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Parser/obj/Debug/net8.0/Tourism.Dotnet.Parser.pdb
 /home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Parser/obj/Debug/net8.0/Tourism.Dotnet.Parser.genruntimeconfig.cache
 /home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Parser/obj/Debug/net8.0/ref/Tourism.Dotnet.Parser.dll
+/home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Parser/obj/Debug/net8.0/Tourism.Dotnet.Parser.sourcelink.json

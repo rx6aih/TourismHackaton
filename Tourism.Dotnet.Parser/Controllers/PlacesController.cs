@@ -8,9 +8,9 @@ using Tourism.Dotnet.Parser.Services;
 namespace Tourism.Dotnet.Parser.Controllers;
 [ApiController]
 [Route("/api/places")]
-public class PlacesController(IHttpClientFactory factory, Repository<Place> repository, ParserDbContext context) : ControllerBase
+public class PlacesController(IHttpClientFactory factory, Repository<Place> repository,Repository<City> cityRepository, ParserDbContext context) : ControllerBase
 {
-    private readonly PlacesService _service = new PlacesService(factory, repository,context);
+    private readonly PlacesService _service = new PlacesService(factory, repository,cityRepository,context);
 
     [HttpPost("/addPlaces")]
     public async Task AddPlaces([FromBody] List<Place> places)
@@ -30,6 +30,11 @@ public class PlacesController(IHttpClientFactory factory, Repository<Place> repo
         return await _service.ParseAndAddPlaces(city, page);
     }
 
+    [HttpGet("/getPlaceByName")]
+    public async Task<Place?> GetPlaceByName(string name)
+    {
+        return await _service.GetByNameAsync(name);
+    }
     [HttpGet("/getAllPlaces")]
     public async Task<List<Place>> GetAllPlaces(CancellationToken cancellationToken = default)
     {
