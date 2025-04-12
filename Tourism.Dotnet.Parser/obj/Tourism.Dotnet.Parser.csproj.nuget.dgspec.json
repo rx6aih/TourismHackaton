@@ -1,0 +1,147 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Parser/Tourism.Dotnet.Parser.csproj": {}
+  },
+  "projects": {
+    "/home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Parser.DAL/Tourism.Dotnet.Parser.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Parser.DAL/Tourism.Dotnet.Parser.DAL.csproj",
+        "projectName": "Tourism.Dotnet.Parser.DAL",
+        "projectPath": "/home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Parser.DAL/Tourism.Dotnet.Parser.DAL.csproj",
+        "packagesPath": "/home/shmi/.nuget/packages/",
+        "outputPath": "/home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Parser.DAL/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/shmi/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.114/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Parser/Tourism.Dotnet.Parser.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Parser/Tourism.Dotnet.Parser.csproj",
+        "projectName": "Tourism.Dotnet.Parser",
+        "projectPath": "/home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Parser/Tourism.Dotnet.Parser.csproj",
+        "packagesPath": "/home/shmi/.nuget/packages/",
+        "outputPath": "/home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Parser/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/shmi/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Parser.DAL/Tourism.Dotnet.Parser.DAL.csproj": {
+                "projectPath": "/home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Parser.DAL/Tourism.Dotnet.Parser.DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.14, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.114/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

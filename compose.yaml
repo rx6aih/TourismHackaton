@@ -1,0 +1,49 @@
+﻿version: '3.8'
+
+services:
+  postgres-auth:
+    container_name: postgres-auth
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: Auth
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5438:5432"
+    volumes:
+      - postgres-auth-data:/var/lib/postgresql/data
+    networks:
+      - my-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  postgres-parser:
+    container_name: postgres-parser
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: Parser
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5439:5432"
+    volumes:
+      - postgres-parser-data:/var/lib/postgresql/data
+    networks:
+      - my-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres-auth-data:
+  postgres-parser-data:
+  redis_data:
+
+networks:
+  my-network:
+    driver: bridge

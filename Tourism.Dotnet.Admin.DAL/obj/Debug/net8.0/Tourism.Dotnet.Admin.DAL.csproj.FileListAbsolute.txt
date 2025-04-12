@@ -1,0 +1,15 @@
+/home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Admin.DAL/bin/Debug/net8.0/Tourism.Dotnet.Admin.DAL.deps.json
+/home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Admin.DAL/bin/Debug/net8.0/Tourism.Dotnet.Admin.DAL.dll
+/home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Admin.DAL/bin/Debug/net8.0/Tourism.Dotnet.Admin.DAL.pdb
+/home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Admin.DAL/bin/Debug/net8.0/Tourism.Dotnet.Parser.DAL.dll
+/home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Admin.DAL/bin/Debug/net8.0/Tourism.Dotnet.Parser.DAL.pdb
+/home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Admin.DAL/obj/Debug/net8.0/Tourism.Dotnet.Admin.DAL.csproj.AssemblyReference.cache
+/home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Admin.DAL/obj/Debug/net8.0/Tourism.Dotnet.Admin.DAL.GeneratedMSBuildEditorConfig.editorconfig
+/home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Admin.DAL/obj/Debug/net8.0/Tourism.Dotnet.Admin.DAL.AssemblyInfoInputs.cache
+/home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Admin.DAL/obj/Debug/net8.0/Tourism.Dotnet.Admin.DAL.AssemblyInfo.cs
+/home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Admin.DAL/obj/Debug/net8.0/Tourism.Dotnet.Admin.DAL.csproj.CoreCompileInputs.cache
+/home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Admin.DAL/obj/Debug/net8.0/Tourism.Dotnet.Admin.DAL.csproj.CopyComplete
+/home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Admin.DAL/obj/Debug/net8.0/Tourism.Dotnet.Admin.DAL.dll
+/home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Admin.DAL/obj/Debug/net8.0/refint/Tourism.Dotnet.Admin.DAL.dll
+/home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Admin.DAL/obj/Debug/net8.0/Tourism.Dotnet.Admin.DAL.pdb
+/home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Admin.DAL/obj/Debug/net8.0/ref/Tourism.Dotnet.Admin.DAL.dll

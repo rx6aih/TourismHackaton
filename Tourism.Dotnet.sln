@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tourism.Dotnet.Parser", "Tourism.Dotnet.Parser\Tourism.Dotnet.Parser.csproj", "{B790730A-8B42-40BD-ABFE-570029989E8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tourism.Dotnet.Parser.DAL", "Tourism.Dotnet.Parser.DAL\Tourism.Dotnet.Parser.DAL.csproj", "{BEFE6C1F-A068-4F3A-B6AC-77412E47C335}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tourism.Dotnet.Admin", "Tourism.Dotnet.Admin\Tourism.Dotnet.Admin.csproj", "{251CA5DE-F521-49F6-8073-A02E17C5120F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tourism.Dotnet.Admin.DAL", "Tourism.Dotnet.Admin.DAL\Tourism.Dotnet.Admin.DAL.csproj", "{9BBB8023-2CBC-4DC2-BC94-E35B9553B531}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B790730A-8B42-40BD-ABFE-570029989E8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B790730A-8B42-40BD-ABFE-570029989E8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B790730A-8B42-40BD-ABFE-570029989E8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B790730A-8B42-40BD-ABFE-570029989E8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEFE6C1F-A068-4F3A-B6AC-77412E47C335}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEFE6C1F-A068-4F3A-B6AC-77412E47C335}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEFE6C1F-A068-4F3A-B6AC-77412E47C335}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEFE6C1F-A068-4F3A-B6AC-77412E47C335}.Release|Any CPU.Build.0 = Release|Any CPU
+		{251CA5DE-F521-49F6-8073-A02E17C5120F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{251CA5DE-F521-49F6-8073-A02E17C5120F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{251CA5DE-F521-49F6-8073-A02E17C5120F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{251CA5DE-F521-49F6-8073-A02E17C5120F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BBB8023-2CBC-4DC2-BC94-E35B9553B531}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BBB8023-2CBC-4DC2-BC94-E35B9553B531}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BBB8023-2CBC-4DC2-BC94-E35B9553B531}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BBB8023-2CBC-4DC2-BC94-E35B9553B531}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

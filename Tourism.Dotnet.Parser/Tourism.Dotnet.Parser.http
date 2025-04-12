@@ -1,0 +1,6 @@
+@Tourism.Dotnet.Parser_HostAddress = http://localhost:5086
+
+GET {{Tourism.Dotnet.Parser_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
