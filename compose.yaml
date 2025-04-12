@@ -1,6 +1,13 @@
 ﻿version: '3.8'
 
 services:
+  api:
+    build:
+      context: ./
+      dockerfile: Tourism.Dotnet.Parser/Dockerfile
+    ports:
+      - "8080:8080"
+  
   postgres-auth:
     container_name: postgres-auth
     image: postgres:latest
