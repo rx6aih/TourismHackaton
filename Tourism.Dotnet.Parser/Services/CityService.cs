@@ -109,7 +109,7 @@ public class CityService(Repository<City> repository, Repository<Place> placesRe
         {
             recommendations.Add(new RecommendationDto()
             {
-                Id = place.Id,
+                Id = place.Id.ToString(),
                 Description = place.Rubrics,
                 Title = place.FullName
             });
@@ -120,13 +120,14 @@ public class CityService(Repository<City> repository, Repository<Place> placesRe
     public async Task<HttpResponseMessage> GetRecommendationsAsync(RequestRecDto placesForRecommendation,
         string requestUrl)
     {
-        
-        HttpClient client = new HttpClient();
-        client.BaseAddress = new Uri(requestUrl);
+        using HttpClient client = new HttpClient();
+    
+        // Убедимся, что URL корректен
+        var baseUri = new Uri(requestUrl);
+        client.BaseAddress = baseUri;
 
-        return await client.SendAsync(new HttpRequestMessage(HttpMethod.Get, requestUrl)
-        {
-            Content = JsonContent.Create(JsonSerializer.Serialize(placesForRecommendation))
-        });
+        // Отправляем запрос на тот же URL (без дублирования пути)
+        var response = await client.PostAsJsonAsync("", placesForRecommendation);
+        return response;
     }
 }

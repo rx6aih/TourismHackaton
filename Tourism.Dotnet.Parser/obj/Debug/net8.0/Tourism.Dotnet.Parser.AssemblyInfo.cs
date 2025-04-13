@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tourism.Dotnet.Parser")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c4acce23d7881b5640a385a316e7be597fc2ea0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7f66b98e68b4d49640468ed1fbbc5b13dea0a4c7")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tourism.Dotnet.Parser")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tourism.Dotnet.Parser")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

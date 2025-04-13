@@ -11,6 +11,8 @@ services:
       - postgres-parser
     networks:
       - my-network    
+    environment:
+      - RECOMMENDATION_SERVICE_URL=http://python-api:8000/search
     
   postgres-parser:
     container_name: postgres-parser
@@ -31,7 +33,25 @@ services:
       timeout: 5s
       retries: 5
     restart: unless-stopped
-
+  
+  python-api:
+    build:
+      context: ../search-endpoint
+      dockerfile: Dockerfile
+    container_name: recommendation-service
+    ports:
+      - "8000:8000"
+    volumes:
+      - ../search-endpoint:/app
+    environment:
+      - PYTHONPATH=/app
+      - PYTHONUNBUFFERED=1
+    working_dir: /app
+    command: python run.py
+    networks:
+      - my-network
+    restart: unless-stopped
+    
 volumes:
   postgres-auth-data:
   postgres-parser-data:
