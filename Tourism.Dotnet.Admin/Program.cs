@@ -22,9 +22,6 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
-using var scope = app.Services.CreateScope();
-await using var dbContext = scope.ServiceProvider.GetRequiredService<AdminDbContext>();
-dbContext.Database.EnsureCreated();
 
 app.UseDeveloperExceptionPage();
 app.UseSwagger();

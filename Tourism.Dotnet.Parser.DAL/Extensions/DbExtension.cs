@@ -13,7 +13,7 @@ public static class DbExtension
         services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
         
         services.AddDbContext<ParserDbContext>(x =>
-            x.UseNpgsql("Server=localhost;Port=5439;Database=Parser;User Id=postgres;Password=postgres"
+            x.UseNpgsql("Server=postgres-parser;Port=5432;Database=Parser;User Id=postgres;Password=postgres"
             ));
         return services;
     }

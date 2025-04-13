@@ -13,7 +13,7 @@ public static class Extensions
         services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
         services.AddDbContext<AdminDbContext>(x =>
-            x.UseNpgsql("Server=localhost;Port=5438;Database=Auth;User Id=postgres;Password=postgres"
+            x.UseNpgsql("Server=postgres-parser;Port=5432;Database=Parser;User Id=postgres;Password=postgres"
             ));
         return services;
     }
