@@ -45,7 +45,6 @@ public class CityController(Repository<City> cititesRepository, Repository<Place
     {
         try
         {
-            // Получаем URL из конфигурации
             var recommendationUrl = configuration["RECOMMENDATION_SERVICE_URL"];
             var response = await _service.GetRecommendationsAsync(placesForRecommendation, recommendationUrl);
         

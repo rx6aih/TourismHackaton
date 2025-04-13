@@ -36,13 +36,13 @@ services:
   
   python-api:
     build:
-      context: ../search-endpoint
+      context: ./search-endpoint
       dockerfile: Dockerfile
     container_name: recommendation-service
     ports:
       - "8000:8000"
     volumes:
-      - ../search-endpoint:/app
+      - ./search-endpoint:/app
     environment:
       - PYTHONPATH=/app
       - PYTHONUNBUFFERED=1
