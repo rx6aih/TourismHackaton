@@ -23,6 +23,8 @@ public class CityService(Repository<City> repository, Repository<Place> placesRe
 
     public async Task AddAsync(CityDto city, CancellationToken cancellationToken = default)
     {
+        if (repository.GetItemsAsync().Result.Any(x => x.Title == city.Title).Equals(null))
+            return;
         // Создаем новый город без указания Id
         var cityEntity = new City()
         {
