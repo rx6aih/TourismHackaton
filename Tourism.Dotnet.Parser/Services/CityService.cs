@@ -117,7 +117,7 @@ public class CityService(Repository<City> repository, Repository<Place> placesRe
         return recommendations;
     }
 
-    public async Task<HttpResponseMessage> GetRecommendationsAsync(List<RecommendationDto> placesForRecommendation,
+    public async Task<HttpResponseMessage> GetRecommendationsAsync(RequestRecDto placesForRecommendation,
         string requestUrl)
     {
         

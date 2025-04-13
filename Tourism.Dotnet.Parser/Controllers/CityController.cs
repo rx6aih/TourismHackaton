@@ -40,7 +40,7 @@ public class CityController(Repository<City> cititesRepository, Repository<Place
     }
 
     [HttpGet("/recommendations")]
-    public async Task<IActionResult> GetRecommendations([FromBody]List<RecommendationDto> placesForRecommendation, [FromQuery]string requestUrl)
+    public async Task<IActionResult> GetRecommendations([FromBody]RequestRecDto placesForRecommendation, [FromQuery]string requestUrl)
     {
         return Ok(await _service.GetRecommendationsAsync(placesForRecommendation, requestUrl));
     }

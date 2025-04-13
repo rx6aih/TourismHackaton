@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tourism.Dotnet.Parser.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4bd965c46ba801262ae4a6d953f85da15915fed7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c4acce23d7881b5640a385a316e7be597fc2ea0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tourism.Dotnet.Parser.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tourism.Dotnet.Parser.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

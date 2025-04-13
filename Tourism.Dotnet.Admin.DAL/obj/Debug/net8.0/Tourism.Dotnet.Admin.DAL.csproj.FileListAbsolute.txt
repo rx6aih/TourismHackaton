@@ -13,3 +13,4 @@
 /home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Admin.DAL/obj/Debug/net8.0/refint/Tourism.Dotnet.Admin.DAL.dll
 /home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Admin.DAL/obj/Debug/net8.0/Tourism.Dotnet.Admin.DAL.pdb
 /home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Admin.DAL/obj/Debug/net8.0/ref/Tourism.Dotnet.Admin.DAL.dll
+/home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Admin.DAL/obj/Debug/net8.0/Tourism.Dotnet.Admin.DAL.sourcelink.json

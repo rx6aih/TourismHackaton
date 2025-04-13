@@ -59,3 +59,4 @@
 /home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Admin/obj/Debug/net8.0/Tourism.Dotnet.Admin.pdb
 /home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Admin/obj/Debug/net8.0/Tourism.Dotnet.Admin.genruntimeconfig.cache
 /home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Admin/obj/Debug/net8.0/ref/Tourism.Dotnet.Admin.dll
+/home/shmi/DevThings/HackShit/Tourism.Dotnet/Tourism.Dotnet.Admin/obj/Debug/net8.0/Tourism.Dotnet.Admin.sourcelink.json
