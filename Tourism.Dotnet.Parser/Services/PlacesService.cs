@@ -98,6 +98,7 @@ public class PlacesService(IHttpClientFactory factory, Repository<Place> reposit
             await context.DaySchedules.AddAsync(day);
         }
     }
+    
     public async Task DeletePlace(Guid id)
     {
         await repository.DeleteAsync(await repository.GetItemByIdAsync(id));

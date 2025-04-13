@@ -13,7 +13,7 @@ public class ParserController(IHttpClientFactory factory) : ControllerBase
     public async Task<IActionResult> GisParse([FromQuery] string city, [FromQuery] int page)
     {
         GisParser gisParser = new GisParser(factory);
-        GisDTO dtos = await gisParser.FetchPlaces(city,page);
+        GisDto dtos = await gisParser.FetchPlaces(city,page);
         List<Place> places = await gisParser.ConvertToPlaces(dtos);
         return Ok(places);
     }

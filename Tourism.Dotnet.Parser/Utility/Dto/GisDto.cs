@@ -3,7 +3,7 @@ using Tourism.Dotnet.Parser.DAL.Entities;
 
 namespace Tourism.Dotnet.Parser.Utility.Dto;
 
-public class GisDTO
+public class GisDto
 {
     [JsonPropertyName("meta")]
     public Meta Meta { get; set; }

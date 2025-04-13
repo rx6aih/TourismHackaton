@@ -9,13 +9,13 @@ namespace Tourism.Dotnet.Parser.Services;
 
 public class GisParser(IHttpClientFactory factory)
 {
-    public async Task<GisDTO> FetchPlaces(string city, int page, CancellationToken cancellationToken = default)
+    public async Task<GisDto> FetchPlaces(string city, int page, CancellationToken cancellationToken = default)
     {
         var client = factory.CreateClient("httpClient");
-        return await client.GetFromJsonAsync<GisDTO>($"https://catalog.api.2gis.com/3.0/items?q={city}&key={ApiKeys.Gis}&fields=items.point,items.reviews,items.schedule,items.address,items.rubrics&$page={page}", cancellationToken);
+        return await client.GetFromJsonAsync<GisDto>($"https://catalog.api.2gis.com/3.0/items?q={city}&key={ApiKeys.Gis}&fields=items.point,items.reviews,items.schedule,items.address,items.rubrics&$page={page}", cancellationToken);
     }
 
-public async Task<List<Place>> ConvertToPlaces(GisDTO gisDto, CancellationToken cancellationToken = default)
+public async Task<List<Place>> ConvertToPlaces(GisDto gisDto, CancellationToken cancellationToken = default)
 {
     List<Place> places = new List<Place>();
     
@@ -74,6 +74,7 @@ public async Task<List<Place>> ConvertToPlaces(GisDTO gisDto, CancellationToken 
         Place place = new Place()
         {
             FullName = dto.FullName,
+            ImageUrl = string.Empty,
             Name = dto.Name,
             Address = address,
             Rating = dto.Reviews?.GeneralRating.ToString(),

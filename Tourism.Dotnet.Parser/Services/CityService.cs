@@ -1,3 +1,4 @@
+using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using Tourism.Dotnet.Parser.DAL.Context;
 using Tourism.Dotnet.Parser.DAL.Entities;
@@ -30,6 +31,7 @@ public class CityService(Repository<City> repository, Repository<Place> placesRe
         {
             Title = city.Title,
             Options = city.Options,
+            Image = city.Image,
             Price = city.Price,
             Description = city.Description,
             Category = city.Category,
@@ -94,5 +96,37 @@ public class CityService(Repository<City> repository, Repository<Place> placesRe
             }
             await repository.UpdateAsync(city, city.Id, cancellationToken);
         }
+    }
+    public async Task<List<RecommendationDto>> GetPlacesForRecommendations(string cityTitle)
+    {
+        City? city = repository.GetItemsAsync().Result.FirstOrDefault(c => c.Title == cityTitle);
+        if(city == null)
+            return new List<RecommendationDto>();
+        
+        List<Place> places = placesRepository.GetItemsAsync().Result.Where(p => p.CityId == city.Id).ToList();
+        List<RecommendationDto> recommendations = new List<RecommendationDto>();
+        foreach (var place in places)
+        {
+            recommendations.Add(new RecommendationDto()
+            {
+                Id = place.Id,
+                Description = place.Rubrics,
+                Title = place.FullName
+            });
+        }
+        return recommendations;
+    }
+
+    public async Task<HttpResponseMessage> GetRecommendationsAsync(List<RecommendationDto> placesForRecommendation,
+        string requestUrl)
+    {
+        
+        HttpClient client = new HttpClient();
+        client.BaseAddress = new Uri(requestUrl);
+
+        return await client.SendAsync(new HttpRequestMessage(HttpMethod.Get, requestUrl)
+        {
+            Content = JsonContent.Create(JsonSerializer.Serialize(placesForRecommendation))
+        });
     }
 }
